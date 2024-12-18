@@ -8,7 +8,7 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 
-# IBM Cloud Security and Compliance Center Go SDK Version v5.5.0
+# IBM Cloud Security and Compliance Center Go SDK Version v5.5.1
 
 Go client library to interact with various
 [IBM Cloud Security and Compliance Center APIs](https://cloud.ibm.com/apidocs/security-compliance).
@@ -26,7 +26,7 @@ Go client library to interact with various
 
 <!-- toc -->
 
-- [IBM Cloud Security and Compliance Center Go SDK Version v5.5.0](#ibm-cloud-security--compliance-center-go-sdk-version-v500)
+- [IBM Cloud Security and Compliance Center Go SDK Version v5.5.1](#ibm-cloud-security--compliance-center-go-sdk-version-v500)
   - [Overview](#overview)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -57,7 +57,7 @@ The IBM Cloud Security and Compliance Center Go SDK allows developers to program
 * Go version 1.12 or above.
 
 ## Installation
-The current version of this SDK: v5.5.0
+The current version of this SDK: v5.5.1
 
 ### Go modules  
 If your application uses Go modules for dependency management (recommended), just add an import for each service 
