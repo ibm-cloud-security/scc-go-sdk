@@ -1,3 +1,10 @@
+## [5.5.1](https://github.com/IBM/scc-go-sdk/compare/v5.5.0...v5.5.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* added missing objects from Minor Update ([#153](https://github.com/IBM/scc-go-sdk/issues/153)) ([ad36577](https://github.com/IBM/scc-go-sdk/commit/ad36577f91090597efa2c6c4da1b634b4c79ee2c))
+
 # [5.5.0](https://github.com/IBM/scc-go-sdk/compare/v5.4.1...v5.5.0) (2024-12-04)
 
 
