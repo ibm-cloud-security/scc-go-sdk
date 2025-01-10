@@ -6327,6 +6327,9 @@ type ControlPrototype struct {
 	// true if the control can be automated, false if the control cannot. Must be false to be a parent
 	ControlRequirement *bool `json:"control_requirement" validate:"required"`
 
+  // The ID of the control.
+	ID *string `json:"control_id,omitempty"`
+
 	// The control description.
 	ControlDescription *string `json:"control_description,omitempty"`
 
@@ -6373,6 +6376,10 @@ func UnmarshalControlPrototype(m map[string]json.RawMessage, result interface{})
 		return
 	}
 	err = core.UnmarshalPrimitive(m, "control_category", &obj.ControlCategory)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalPrimitive(m, "control_id", &obj.ID)
 	if err != nil {
 		return
 	}
@@ -6486,6 +6493,9 @@ func UnmarshalControlSpecification(m map[string]json.RawMessage, result interfac
 
 // ControlSpecificationPrototype : The necessary fields to instantiate a Control Specification.
 type ControlSpecificationPrototype struct {
+  // The ID of the control specification
+	ID *string `json:"control_specification_id,omitempty"`
+
 	// The ID of the component. The component_id can be found from the 'service_name' using the Get Services method.
 	ComponentID *string `json:"component_id,omitempty"`
 
@@ -6508,6 +6518,10 @@ const (
 // UnmarshalControlSpecificationPrototype unmarshals an instance of ControlSpecificationPrototype from the specified map of raw messages.
 func UnmarshalControlSpecificationPrototype(m map[string]json.RawMessage, result interface{}) (err error) {
 	obj := new(ControlSpecificationPrototype)
+	err = core.UnmarshalPrimitive(m, "control_specification_id", &obj.ID)
+	if err != nil {
+		return
+	}
 	err = core.UnmarshalPrimitive(m, "component_id", &obj.ComponentID)
 	if err != nil {
 		return
@@ -12076,6 +12090,9 @@ type ReplaceCustomControlLibraryOptions struct {
 	// The list of rules that the control library attempts to adhere to.
 	Controls []Control `json:"controls" validate:"required"`
 
+	// The unique identifier of the revision.
+	VersionGroupLabel *string `json:"version_group_label,omitempty"`
+
 	// The account id tied to billing.
 	BssAccount *string `json:"bss_account,omitempty"`
 
@@ -12141,6 +12158,12 @@ func (_options *ReplaceCustomControlLibraryOptions) SetControlLibraryVersion(con
 // SetControls : Allow user to set Controls
 func (_options *ReplaceCustomControlLibraryOptions) SetControls(controls []Control) *ReplaceCustomControlLibraryOptions {
 	_options.Controls = controls
+	return _options
+}
+
+// SetVersionGroupLabel: Allows user to set VersionGroupLabel
+func (_options *ReplaceCustomControlLibraryOptions) SetVersionGroupLabel(versionGroupLabel string) *ReplaceCustomControlLibraryOptions {
+	_options.VersionGroupLabel = core.StringPtr(versionGroupLabel)
 	return _options
 }
 
@@ -13987,6 +14010,10 @@ func UnmarshalRuleTarget(m map[string]json.RawMessage, result interface{}) (err 
 	if err != nil {
 		return
 	}
+	err = core.UnmarshalPrimitive(m, "ref", &obj.Ref)
+	if err != nil {
+		return
+	}
 	err = core.UnmarshalModel(m, "additional_target_attributes", &obj.AdditionalTargetAttributes, UnmarshalAdditionalTargetAttribute)
 	if err != nil {
 		return
@@ -14398,10 +14425,6 @@ func UnmarshalScopeProperty(m map[string]json.RawMessage, result interface{}) (e
 		return
 	}
 	err = core.UnmarshalPrimitive(m, "value", &obj.Value)
-	if err != nil {
-		return
-	}
-	err = core.UnmarshalModel(m, "exclusions", &obj.Exclusions, UnmarshalScopePropertyExclusionItem)
 	if err != nil {
 		return
 	}
@@ -15734,8 +15757,10 @@ func UnmarshalRequiredConfigConditionSubRule(m map[string]json.RawMessage, resul
 // ScopePropertyExclusions : Any exclusions or resources that should not be part of the scope. Has to be the same type as the one specified.
 // This model "extends" ScopeProperty
 type ScopePropertyExclusions struct {
+	Name *string `json:"name,omitempty"`
+
 	// A list of scopes/targets to exclude from a scope.
-	Exclusions []ScopePropertyExclusionItem `json:"exclusions,omitempty"`
+	Value []ScopePropertyExclusionItem`json:"value,omitempty"`
 }
 
 func (*ScopePropertyExclusions) isaScopeProperty() bool {
@@ -15745,7 +15770,11 @@ func (*ScopePropertyExclusions) isaScopeProperty() bool {
 // UnmarshalScopePropertyExclusions unmarshals an instance of ScopePropertyExclusions from the specified map of raw messages.
 func UnmarshalScopePropertyExclusions(m map[string]json.RawMessage, result interface{}) (err error) {
 	obj := new(ScopePropertyExclusions)
-	err = core.UnmarshalModel(m, "exclusions", &obj.Exclusions, UnmarshalScopePropertyExclusionItem)
+	err = core.UnmarshalPrimitive(m, "name", &obj.Name)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalModel(m, "value", &obj.Value, UnmarshalScopePropertyExclusionItem)
 	if err != nil {
 		return
 	}
