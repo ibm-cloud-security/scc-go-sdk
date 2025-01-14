@@ -6327,7 +6327,7 @@ type ControlPrototype struct {
 	// true if the control can be automated, false if the control cannot. Must be false to be a parent
 	ControlRequirement *bool `json:"control_requirement" validate:"required"`
 
-  // The ID of the control.
+	// The ID of the control.
 	ID *string `json:"control_id,omitempty"`
 
 	// The control description.
@@ -6493,7 +6493,7 @@ func UnmarshalControlSpecification(m map[string]json.RawMessage, result interfac
 
 // ControlSpecificationPrototype : The necessary fields to instantiate a Control Specification.
 type ControlSpecificationPrototype struct {
-  // The ID of the control specification
+	// The ID of the control specification
 	ID *string `json:"control_specification_id,omitempty"`
 
 	// The ID of the component. The component_id can be found from the 'service_name' using the Get Services method.
@@ -15760,7 +15760,7 @@ type ScopePropertyExclusions struct {
 	Name *string `json:"name,omitempty"`
 
 	// A list of scopes/targets to exclude from a scope.
-	Value []ScopePropertyExclusionItem`json:"value,omitempty"`
+	Value []ScopePropertyExclusionItem `json:"value,omitempty"`
 }
 
 func (*ScopePropertyExclusions) isaScopeProperty() bool {
