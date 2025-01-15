@@ -3211,7 +3211,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
@@ -3292,7 +3292,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke CreateCustomControlLibrary successfully with retries`, func() {
@@ -3313,7 +3313,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
@@ -3397,7 +3397,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke CreateCustomControlLibrary successfully`, func() {
@@ -3423,7 +3423,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
@@ -3476,7 +3476,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
@@ -3551,7 +3551,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
@@ -3659,7 +3659,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"limit": 50, "total_count": 230, "first": {"href": "Href"}, "next": {"href": "Href", "start": "Start"}, "control_libraries": [{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}]}`)
+					fmt.Fprintf(res, "%s", `{"limit": 50, "total_count": 230, "first": {"href": "Href"}, "next": {"href": "Href", "start": "Start"}, "control_libraries": [{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}]}`)
 				}))
 			})
 			It(`Invoke ListControlLibraries successfully with retries`, func() {
@@ -3715,7 +3715,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"limit": 50, "total_count": 230, "first": {"href": "Href"}, "next": {"href": "Href", "start": "Start"}, "control_libraries": [{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}]}`)
+					fmt.Fprintf(res, "%s", `{"limit": 50, "total_count": 230, "first": {"href": "Href"}, "next": {"href": "Href", "start": "Start"}, "control_libraries": [{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}]}`)
 				}))
 			})
 			It(`Invoke ListControlLibraries successfully`, func() {
@@ -3838,16 +3838,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(securityAndComplianceCenterService).ToNot(BeNil())
 
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -3855,13 +3855,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlDocModel.ControlDocsType = core.StringPtr("testString")
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 
@@ -3873,7 +3873,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.ControlLibraryDescription = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryType = core.StringPtr("custom")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryVersion = core.StringPtr("testString")
-				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}
+				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.Control{*controlPrototypeModel}
 				replaceCustomControlLibraryOptionsModel.BssAccount = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
@@ -3928,7 +3928,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke ReplaceCustomControlLibrary successfully with retries`, func() {
@@ -3941,16 +3941,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				securityAndComplianceCenterService.EnableRetries(0, 0)
 
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -3958,13 +3958,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlDocModel.ControlDocsType = core.StringPtr("testString")
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 
@@ -3976,7 +3976,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.ControlLibraryDescription = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryType = core.StringPtr("custom")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryVersion = core.StringPtr("testString")
-				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}
+				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.Control{*controlPrototypeModel}
 				replaceCustomControlLibraryOptionsModel.BssAccount = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
@@ -4034,7 +4034,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke ReplaceCustomControlLibrary successfully`, func() {
@@ -4052,16 +4052,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(result).To(BeNil())
 
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -4069,13 +4069,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlDocModel.ControlDocsType = core.StringPtr("testString")
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 
@@ -4087,7 +4087,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.ControlLibraryDescription = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryType = core.StringPtr("custom")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryVersion = core.StringPtr("testString")
-				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}
+				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.Control{*controlPrototypeModel}
 				replaceCustomControlLibraryOptionsModel.BssAccount = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
@@ -4106,16 +4106,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(securityAndComplianceCenterService).ToNot(BeNil())
 
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -4123,13 +4123,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlDocModel.ControlDocsType = core.StringPtr("testString")
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 
@@ -4141,7 +4141,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.ControlLibraryDescription = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryType = core.StringPtr("custom")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryVersion = core.StringPtr("testString")
-				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}
+				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.Control{*controlPrototypeModel}
 				replaceCustomControlLibraryOptionsModel.BssAccount = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
@@ -4182,16 +4182,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(securityAndComplianceCenterService).ToNot(BeNil())
 
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -4199,13 +4199,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				controlDocModel.ControlDocsType = core.StringPtr("testString")
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 
@@ -4217,7 +4217,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.ControlLibraryDescription = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryType = core.StringPtr("custom")
 				replaceCustomControlLibraryOptionsModel.ControlLibraryVersion = core.StringPtr("testString")
-				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}
+				replaceCustomControlLibraryOptionsModel.Controls = []securityandcompliancecenterapiv3.Control{*controlPrototypeModel}
 				replaceCustomControlLibraryOptionsModel.BssAccount = core.StringPtr("testString")
 				replaceCustomControlLibraryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
@@ -4300,7 +4300,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke GetControlLibrary successfully with retries`, func() {
@@ -4357,7 +4357,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke GetControlLibrary successfully`, func() {
@@ -4524,7 +4524,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke DeleteCustomControlLibrary successfully with retries`, func() {
@@ -4581,7 +4581,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "CreatedOn", "updated_by": "UpdatedBy", "updated_on": "UpdatedOn", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
+					fmt.Fprintf(res, "%s", `{"control_library_name": "ControlLibraryName", "control_library_description": "ControlLibraryDescription", "control_library_type": "custom", "control_library_version": "ControlLibraryVersion", "controls": [{"control_name": "ControlName", "control_description": "ControlDescription", "control_category": "ControlCategory", "control_requirement": true, "control_parent": "ControlParent", "control_specifications": [{"component_id": "ComponentID", "environment": "ibm-cloud", "control_specification_description": "ControlSpecificationDescription", "assessments": [{"assessment_id": "AssessmentID", "assessment_description": "AssessmentDescription"}]}], "control_docs": {"control_docs_id": "ControlDocsID", "control_docs_type": "ControlDocsType"}, "status": "Status"}], "id": "ID", "account_id": "AccountID", "version_group_label": "VersionGroupLabel", "latest": true, "created_by": "CreatedBy", "created_on": "2019-01-01T12:00:00.000Z", "updated_by": "UpdatedBy", "updated_on": "2019-01-01T12:00:00.000Z", "hierarchy_enabled": true, "controls_count": 13, "control_parents_count": 19}`)
 				}))
 			})
 			It(`Invoke DeleteCustomControlLibrary successfully`, func() {
@@ -10762,7 +10762,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.InstanceID = core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				createProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				createProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				createProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
 				result, response, operationErr := securityAndComplianceCenterService.CreateProviderTypeInstance(createProviderTypeInstanceOptionsModel)
@@ -10832,7 +10832,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.InstanceID = core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				createProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				createProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				createProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with a Context to test a timeout error
@@ -10910,7 +10910,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.InstanceID = core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				createProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				createProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				createProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
@@ -10932,7 +10932,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.InstanceID = core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				createProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				createProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				createProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
 				err := securityAndComplianceCenterService.SetServiceURL("")
@@ -10976,7 +10976,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.InstanceID = core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				createProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				createProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				createProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation
@@ -11458,7 +11458,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				updateProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				updateProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
 				result, response, operationErr := securityAndComplianceCenterService.UpdateProviderTypeInstance(updateProviderTypeInstanceOptionsModel)
@@ -11529,7 +11529,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				updateProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				updateProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with a Context to test a timeout error
@@ -11608,7 +11608,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				updateProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				updateProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
@@ -11631,7 +11631,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				updateProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				updateProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
 				err := securityAndComplianceCenterService.SetServiceURL("")
@@ -11676,7 +11676,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.ProviderTypeID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID = core.StringPtr("testString")
 				updateProviderTypeInstanceOptionsModel.Name = core.StringPtr("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.Attributes = map[string]string{"key1": "testString"}
+				updateProviderTypeInstanceOptionsModel.Attributes = map[string]interface{}{"key1": "testString"}
 				updateProviderTypeInstanceOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation
@@ -18369,11 +18369,11 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(controlSpecificationPrototypeModel).ToNot(BeNil())
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("apprapp")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("This field is used to describe a control specification")
+				controlSpecificationPrototypeModel.Description = core.StringPtr("This field is used to describe a control specification")
 				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
 				Expect(controlSpecificationPrototypeModel.ComponentID).To(Equal(core.StringPtr("apprapp")))
 				Expect(controlSpecificationPrototypeModel.Environment).To(Equal(core.StringPtr("ibm-cloud")))
-				Expect(controlSpecificationPrototypeModel.ControlSpecificationDescription).To(Equal(core.StringPtr("This field is used to describe a control specification")))
+				Expect(controlSpecificationPrototypeModel.Description).To(Equal(core.StringPtr("This field is used to describe a control specification")))
 				Expect(controlSpecificationPrototypeModel.Assessments).To(Equal([]securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}))
 
 				// Construct an instance of the ControlDoc model
@@ -18590,13 +18590,13 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				createProviderTypeInstanceOptionsModel.SetInstanceID("acd7032c-15a3-484f-bf5b-67d41534d940")
 				createProviderTypeInstanceOptionsModel.SetProviderTypeID("testString")
 				createProviderTypeInstanceOptionsModel.SetName("workload-protection-instance-1")
-				createProviderTypeInstanceOptionsModel.SetAttributes(map[string]string{"key1": "testString"})
+				createProviderTypeInstanceOptionsModel.SetAttributes(map[string]interface{}{"key1": "testString"})
 				createProviderTypeInstanceOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(createProviderTypeInstanceOptionsModel).ToNot(BeNil())
 				Expect(createProviderTypeInstanceOptionsModel.InstanceID).To(Equal(core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")))
 				Expect(createProviderTypeInstanceOptionsModel.ProviderTypeID).To(Equal(core.StringPtr("testString")))
 				Expect(createProviderTypeInstanceOptionsModel.Name).To(Equal(core.StringPtr("workload-protection-instance-1")))
-				Expect(createProviderTypeInstanceOptionsModel.Attributes).To(Equal(map[string]string{"key1": "testString"}))
+				Expect(createProviderTypeInstanceOptionsModel.Attributes).To(Equal(map[string]interface{}{"key1": "testString"}))
 				Expect(createProviderTypeInstanceOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewCreateRuleOptions successfully`, func() {
@@ -19627,7 +19627,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 			})
 			It(`Invoke NewReplaceCustomControlLibraryOptions successfully`, func() {
 				// Construct an instance of the AssessmentPrototype model
-				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.AssessmentPrototype)
+				assessmentPrototypeModel := new(securityandcompliancecenterapiv3.Assessment)
 				Expect(assessmentPrototypeModel).ToNot(BeNil())
 				assessmentPrototypeModel.AssessmentID = core.StringPtr("testString")
 				assessmentPrototypeModel.AssessmentDescription = core.StringPtr("testString")
@@ -19635,16 +19635,16 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(assessmentPrototypeModel.AssessmentDescription).To(Equal(core.StringPtr("testString")))
 
 				// Construct an instance of the ControlSpecificationPrototype model
-				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecificationPrototype)
+				controlSpecificationPrototypeModel := new(securityandcompliancecenterapiv3.ControlSpecification)
 				Expect(controlSpecificationPrototypeModel).ToNot(BeNil())
 				controlSpecificationPrototypeModel.ComponentID = core.StringPtr("testString")
 				controlSpecificationPrototypeModel.Environment = core.StringPtr("ibm-cloud")
-				controlSpecificationPrototypeModel.ControlSpecificationDescription = core.StringPtr("testString")
-				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}
+				controlSpecificationPrototypeModel.Description = core.StringPtr("testString")
+				controlSpecificationPrototypeModel.Assessments = []securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}
 				Expect(controlSpecificationPrototypeModel.ComponentID).To(Equal(core.StringPtr("testString")))
 				Expect(controlSpecificationPrototypeModel.Environment).To(Equal(core.StringPtr("ibm-cloud")))
-				Expect(controlSpecificationPrototypeModel.ControlSpecificationDescription).To(Equal(core.StringPtr("testString")))
-				Expect(controlSpecificationPrototypeModel.Assessments).To(Equal([]securityandcompliancecenterapiv3.AssessmentPrototype{*assessmentPrototypeModel}))
+				Expect(controlSpecificationPrototypeModel.Description).To(Equal(core.StringPtr("testString")))
+				Expect(controlSpecificationPrototypeModel.Assessments).To(Equal([]securityandcompliancecenterapiv3.Assessment{*assessmentPrototypeModel}))
 
 				// Construct an instance of the ControlDoc model
 				controlDocModel := new(securityandcompliancecenterapiv3.ControlDoc)
@@ -19655,14 +19655,14 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(controlDocModel.ControlDocsType).To(Equal(core.StringPtr("testString")))
 
 				// Construct an instance of the ControlPrototype model
-				controlPrototypeModel := new(securityandcompliancecenterapiv3.ControlPrototype)
+				controlPrototypeModel := new(securityandcompliancecenterapiv3.Control)
 				Expect(controlPrototypeModel).ToNot(BeNil())
 				controlPrototypeModel.ControlName = core.StringPtr("testString")
 				controlPrototypeModel.ControlDescription = core.StringPtr("testString")
 				controlPrototypeModel.ControlCategory = core.StringPtr("testString")
 				controlPrototypeModel.ControlRequirement = core.BoolPtr(true)
 				controlPrototypeModel.ControlParent = core.StringPtr("testString")
-				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}
+				controlPrototypeModel.ControlSpecifications = []securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}
 				controlPrototypeModel.ControlDocs = controlDocModel
 				controlPrototypeModel.Status = core.StringPtr("testString")
 				Expect(controlPrototypeModel.ControlName).To(Equal(core.StringPtr("testString")))
@@ -19670,7 +19670,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(controlPrototypeModel.ControlCategory).To(Equal(core.StringPtr("testString")))
 				Expect(controlPrototypeModel.ControlRequirement).To(Equal(core.BoolPtr(true)))
 				Expect(controlPrototypeModel.ControlParent).To(Equal(core.StringPtr("testString")))
-				Expect(controlPrototypeModel.ControlSpecifications).To(Equal([]securityandcompliancecenterapiv3.ControlSpecificationPrototype{*controlSpecificationPrototypeModel}))
+				Expect(controlPrototypeModel.ControlSpecifications).To(Equal([]securityandcompliancecenterapiv3.ControlSpecification{*controlSpecificationPrototypeModel}))
 				Expect(controlPrototypeModel.ControlDocs).To(Equal(controlDocModel))
 				Expect(controlPrototypeModel.Status).To(Equal(core.StringPtr("testString")))
 
@@ -19681,7 +19681,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsControlLibraryDescription := "testString"
 				replaceCustomControlLibraryOptionsControlLibraryType := "custom"
 				replaceCustomControlLibraryOptionsControlLibraryVersion := "testString"
-				replaceCustomControlLibraryOptionsControls := []securityandcompliancecenterapiv3.ControlPrototype{}
+				replaceCustomControlLibraryOptionsControls := []securityandcompliancecenterapiv3.Control{}
 				replaceCustomControlLibraryOptionsModel := securityAndComplianceCenterService.NewReplaceCustomControlLibraryOptions(instanceID, controlLibraryID, replaceCustomControlLibraryOptionsControlLibraryName, replaceCustomControlLibraryOptionsControlLibraryDescription, replaceCustomControlLibraryOptionsControlLibraryType, replaceCustomControlLibraryOptionsControlLibraryVersion, replaceCustomControlLibraryOptionsControls)
 				replaceCustomControlLibraryOptionsModel.SetInstanceID("acd7032c-15a3-484f-bf5b-67d41534d940")
 				replaceCustomControlLibraryOptionsModel.SetControlLibraryID("51ca566e-c559-412b-8d64-f05b57044c32")
@@ -19689,7 +19689,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				replaceCustomControlLibraryOptionsModel.SetControlLibraryDescription("testString")
 				replaceCustomControlLibraryOptionsModel.SetControlLibraryType("custom")
 				replaceCustomControlLibraryOptionsModel.SetControlLibraryVersion("testString")
-				replaceCustomControlLibraryOptionsModel.SetControls([]securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel})
+				replaceCustomControlLibraryOptionsModel.SetControls([]securityandcompliancecenterapiv3.Control{*controlPrototypeModel})
 				replaceCustomControlLibraryOptionsModel.SetBssAccount("testString")
 				replaceCustomControlLibraryOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(replaceCustomControlLibraryOptionsModel).ToNot(BeNil())
@@ -19699,7 +19699,7 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				Expect(replaceCustomControlLibraryOptionsModel.ControlLibraryDescription).To(Equal(core.StringPtr("testString")))
 				Expect(replaceCustomControlLibraryOptionsModel.ControlLibraryType).To(Equal(core.StringPtr("custom")))
 				Expect(replaceCustomControlLibraryOptionsModel.ControlLibraryVersion).To(Equal(core.StringPtr("testString")))
-				Expect(replaceCustomControlLibraryOptionsModel.Controls).To(Equal([]securityandcompliancecenterapiv3.ControlPrototype{*controlPrototypeModel}))
+				Expect(replaceCustomControlLibraryOptionsModel.Controls).To(Equal([]securityandcompliancecenterapiv3.Control{*controlPrototypeModel}))
 				Expect(replaceCustomControlLibraryOptionsModel.BssAccount).To(Equal(core.StringPtr("testString")))
 				Expect(replaceCustomControlLibraryOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
@@ -20115,14 +20115,14 @@ var _ = Describe(`securityandcompliancecenterapiv3`, func() {
 				updateProviderTypeInstanceOptionsModel.SetProviderTypeID("testString")
 				updateProviderTypeInstanceOptionsModel.SetProviderTypeInstanceID("testString")
 				updateProviderTypeInstanceOptionsModel.SetName("workload-protection-instance-1")
-				updateProviderTypeInstanceOptionsModel.SetAttributes(map[string]string{"key1": "testString"})
+				updateProviderTypeInstanceOptionsModel.SetAttributes(map[string]interface{}{"key1": "testString"})
 				updateProviderTypeInstanceOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(updateProviderTypeInstanceOptionsModel).ToNot(BeNil())
 				Expect(updateProviderTypeInstanceOptionsModel.InstanceID).To(Equal(core.StringPtr("acd7032c-15a3-484f-bf5b-67d41534d940")))
 				Expect(updateProviderTypeInstanceOptionsModel.ProviderTypeID).To(Equal(core.StringPtr("testString")))
 				Expect(updateProviderTypeInstanceOptionsModel.ProviderTypeInstanceID).To(Equal(core.StringPtr("testString")))
 				Expect(updateProviderTypeInstanceOptionsModel.Name).To(Equal(core.StringPtr("workload-protection-instance-1")))
-				Expect(updateProviderTypeInstanceOptionsModel.Attributes).To(Equal(map[string]string{"key1": "testString"}))
+				Expect(updateProviderTypeInstanceOptionsModel.Attributes).To(Equal(map[string]interface{}{"key1": "testString"}))
 				Expect(updateProviderTypeInstanceOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewUpdateScopeOptions successfully`, func() {
